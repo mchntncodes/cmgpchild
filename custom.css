@@ -66,3 +66,17 @@ body.cm-theme {
 .cm-sidebar-cta-title {
   margin: 0 0 10px 0;
 }
+
+/* Navigation bar styling */
+.cm-theme .site-header,
+.cm-theme .main-navigation,
+.cm-theme .main-navigation .inside-navigation,
+.cm-theme .navigation-branding,
+.cm-theme .main-navigation ul ul {
+  background-color: var(--color-background);
+}
+
+.cm-theme .main-navigation .menu-bar-item > a,
+.cm-theme .main-navigation .main-nav > ul > li > a {
+  color: var(--color-foreground);
+}
