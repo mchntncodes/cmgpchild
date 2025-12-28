@@ -81,6 +81,53 @@ body.cm-theme {
   color: var(--color-foreground);
 }
 
+/* Global Styles for Dark Theme */
+:root {
+  --color-background: hsl(220 20% 6%);
+  --color-foreground: hsl(45 10% 95%);
+  --color-primary: hsl(45 80% 60%);
+  --color-primary-dark: hsl(35 90% 50%);
+  --color-muted: hsl(45 10% 60%);
+  --color-border: hsl(45 10% 15%);
+  --color-card: hsl(220 20% 10%);
+  
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-background);
+  color: var(--color-foreground);
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+}
+
+/* Gradient Text Utility */
+.gradient-text {
+  background: linear-gradient(135deg, hsl(45 80% 60%), hsl(35 90% 55%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* Button Styles */
 .btn {
   display: inline-flex;
